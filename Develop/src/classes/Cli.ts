@@ -454,7 +454,7 @@ class Cli {
             }
           }
         }            
-          // end v01.08 code
+          // move startCli toa void calling conflicts
             
         else if (answers.action === 'Select or create another vehicle') {
           // start the cli to return to the initial prompt if the user wants to select or create another vehicle
@@ -470,29 +470,12 @@ class Cli {
         }
       });
   }
-
-  // method to start the cli
-  startCli(): void {
-    inquirer
-      .prompt([
-        {
-          type: 'list',
-          name: 'CreateOrSelect',
-          message:
-            'Would you like to create a new vehicle or perform an action on an existing vehicle?',
-          choices: ['Create a new vehicle', 'Select an existing vehicle'],
-        },
-      ])
-      .then((answers) => {
-        // check if the user wants to create a new vehicle or select an existing vehicle
-        if (answers.CreateOrSelect === 'Create a new vehicle') {
-          this.createVehicle();
-        } else {
-          this.chooseVehicle();
-        }
-      });
-  }
 }
 
 // export the Cli class
 export default Cli;
+// add performActions function
+function performActions() {
+  throw new Error("Function not implemented.");
+}
+        // end v01.08 code
