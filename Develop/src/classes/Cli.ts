@@ -33,7 +33,30 @@ class Cli {
       Math.random().toString(36).substring(2, 15)
     );
   }
-
+  
+  // method to start the cli -- v01.03 moves it and declares the function before it is called further down
+ startCli(): void {
+    inquirer
+      .prompt([
+        {
+          type: 'list',
+          name: 'CreateOrSelect',
+          message:
+            'Would you like to create a new vehicle or perform an action on an existing vehicle?',
+          choices: ['Create a new vehicle', 'Select an existing vehicle'],
+        },
+      ])
+      .then((answers: { CreateOrSelect: string; }) => {
+        // check if the user wants to create a new vehicle or select an existing vehicle
+        if (answers.CreateOrSelect === 'Create a new vehicle') {
+          this.createVehicle();
+        } else {
+          this.chooseVehicle();
+        }
+      })
+  } 
+  // end v01.03
+  
   // method to choose a vehicle from existing vehicles
   chooseVehicle(): void {
     inquirer
