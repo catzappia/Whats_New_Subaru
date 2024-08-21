@@ -41,9 +41,10 @@ class Motorbike extends Vehicle{
     this.year = year;
     this.weight = weight;
     this.topSpeed = topSpeed;
-    this.wheels = wheels;
-    if (this.wheels.length !== 2) {
-      this.wheels = [new Wheel(17, 'Michelin'), new Wheel(17, 'Michelin')];
+    if (wheels.length !== 2) {
+      this.wheels = [new Wheel(), new Wheel()];
+    } else {
+      this.wheels = wheels;
     }
   }  
   

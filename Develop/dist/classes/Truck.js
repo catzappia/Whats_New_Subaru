@@ -21,9 +21,11 @@ class Truck extends Vehicle {
         this.year = year;
         this.weight = weight;
         this.topSpeed = topSpeed;
-        this.wheels = wheels;
-        if (this.wheels.length !== 4) {
-            this.wheels = [new Wheel(17, 'Michelin'), new Wheel(17, 'Michelin'), new Wheel(17, 'Michelin'), new Wheel(17, 'Michelin')];
+        if (wheels.length !== 4) {
+            this.wheels = [new Wheel(), new Wheel(), new Wheel(), new Wheel()];
+        }
+        else {
+            this.wheels = wheels;
         }
         this.towingCapacity = towingCapacity;
     }
