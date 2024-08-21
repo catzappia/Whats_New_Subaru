@@ -16,7 +16,6 @@ class Cli {
   exit: boolean;
   
   // end starter code for v01.01
- main
 
   // TODO: Update the constructor to accept Truck and Motorbike objects as well
   constructor(vehicles: (Truck | Motorbike | Car)[]) {
