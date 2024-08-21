@@ -10,9 +10,11 @@ class Cli {
   // TODO: update the vehicles property to accept Truck and Motorbike objects as well
   // TODO: You will need to use the Union operator to define additional types for the array
   // TODO: See the AbleToTow interface for an example of how to use the Union operator
-  vehicles: (Car)[];
+  vehicles: (Truck | Motorbike | Car)[];
+  // added union operator
   selectedVehicleVin: string | undefined;
-  exit: boolean = false;
+  exit: boolean;
+  // end starter code for v01.01
 
   // TODO: Update the constructor to accept Truck and Motorbike objects as well
   constructor(vehicles: (Car)[]) {
