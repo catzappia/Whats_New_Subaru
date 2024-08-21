@@ -14,7 +14,9 @@ class Cli {
   // added union operator
   selectedVehicleVin: string | undefined;
   exit: boolean;
-  // end starter code v01.01
+  
+  // end starter code for v01.01
+ main
 
   // TODO: Update the constructor to accept Truck and Motorbike objects as well
   constructor(vehicles: (Truck | Motorbike | Car)[]) {
