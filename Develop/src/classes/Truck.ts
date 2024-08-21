@@ -62,6 +62,7 @@ tow(vehicle: Truck | Motorbike | Car): void {
     } else {
       console.log(`Vehicle is too heavy to be towed`);
     }  
+  }
     
   // TODO: Override the printDetails method from the Vehicle class
     // TODO: The method should call the printDetails method of the parent class
@@ -77,7 +78,7 @@ override printDetails(): void {
     console.log(`Color: ${this.color}`);
     console.log(`Towing Capacity: ${this.towingCapacity}`);
     console.log(`Wheels: ${this.wheels}`);
-    }
+}
 }
 
 // Export the Truck class as the default export
