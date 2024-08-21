@@ -39,7 +39,7 @@ constructor(vin: string, color: string, make: string, model: string, year: numbe
     this.wheels = [new Wheel(17, 'Michelin'), new Wheel(17, 'Michelin'), new Wheel(17, 'Michelin'), new Wheel(17, 'Michelin')];
   }
   this.towingCapacity = towingCapacity;
-}
+  }
   
   // TODO: Implement the tow method from the AbleToTow interface
     // TODO: Get the make an model of the vehicle if it exists
@@ -56,12 +56,18 @@ constructor(vin: string, color: string, make: string, model: string, year: numbe
       console.log(`Towing ${vehicle.make} ${vehicle.model}`);
     } else {
      console.log('Vehicle does not exist');    
-  }
-
+    }
+    if (vehicle.weight <= this.towingCapacity) {
+      console.log(`Towing ${vehicle.make} ${vehicle.model}`);
+    } else {
+      console.log(`Vehicle is too heavy to be towed`);
+    }  
+    
   // TODO: Override the printDetails method from the Vehicle class
     // TODO: The method should call the printDetails method of the parent class
     // TODO: The method should log the details of the Truck
     // TODO: The details should include the VIN, make, model, year, weight, top speed, color, towing capacity, and wheels
+
 }
 
 // Export the Truck class as the default export
