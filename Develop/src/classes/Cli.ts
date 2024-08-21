@@ -282,14 +282,29 @@ class Cli {
           message: 'Enter Rear Wheel Brand',
         },
       ])
-      .then((answers) => {
+      
+      // start v01.06 code
+      .then((answers: { color: string; make: string; model: string; year: string; weight: string; topSpeed: string; frontWheelDiameter: string; frontWheelBrand: string; rearWheelDiameter: string; rearWheelBrand: string; }) => {
         // TODO: Use the answers object to pass the required properties to the Motorbike constructor
         // TODO: push the motorbike to the vehicles array
         // TODO: set the selectedVehicleVin to the vin of the motorbike
         // TODO: perform actions on the motorbike
-      });
+        const motorbike = new Motorbike(
+          Cli.generateVin(),
+          answers.color,
+          answers.make,
+          answers.model,
+          parseInt(answers.year),
+          parseInt(answers.weight),
+          parseInt(answers.topSpeed),
+          []);
+          this.vehicles.push(motorbike);
+          this.selectedVehicleVin = motorbike.vin;
+          this.performActions();
+        });
   }
-
+      // end v01.06 code
+  
   // method to find a vehicle to tow
   // TODO: add a parameter to accept a truck object
   findVehicleToTow(): void {
