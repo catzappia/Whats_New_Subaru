@@ -30,10 +30,10 @@ A cli vehicle builder.
   Node v20 is required
 
   ## Usage
-  ![Walthrough](Develop/assets/walkthrough.gif)
+  ![Walthrough](Develop/assets/Whats_New_Subaru.gif)
   - [Screenshots](Develop/assets/terminal.png)
   - [Screenshots](Develop/assets/terminal-2.png)
-  - [Video](link goes here)
+  - [Video](https://drive.google.com/file/d/1ZIcF1dZpJImpk8058Z8pbJZAljk8UeSA/view?usp=sharing)
  
     # Executing the Program
     1. open coding software and load in Whats_New_Subaru files.
