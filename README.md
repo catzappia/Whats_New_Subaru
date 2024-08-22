@@ -31,8 +31,8 @@ A cli vehicle builder.
 
   ## Usage
   ![Walthrough](Develop/assets/Whats_New_Subaru.gif)
-  - [Screenshots](Develop/assets/terminal.png)
-  - [Screenshots](Develop/assets/terminal-2.png)
+  ![Screenshots](Develop/assets/terminal.png)
+  ![Screenshots](Develop/assets/terminal-2.png)
   - [Video](https://drive.google.com/file/d/1ZIcF1dZpJImpk8058Z8pbJZAljk8UeSA/view?usp=sharing)
  
     # Executing the Program
