@@ -14,7 +14,7 @@ A cli vehicle builder.
 - [License](#license)
 - [Authors](#authors)
 - [Version History](#version-history)
-- [tests](#tests)
+- [Tests](#tests)
 
   ## Installation
   requires
