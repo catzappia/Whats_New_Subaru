@@ -416,7 +416,7 @@ class Cli {
                     }
                 }
             }
-            // move startCli toa void calling conflicts
+            // move startCli to avoid calling conflicts
             else if (answers.action === 'Select or create another vehicle') {
                 // start the cli to return to the initial prompt if the user wants to select or create another vehicle
                 this.startCli();
